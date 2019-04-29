@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EFEF40F-6CF5-4655-85EE-6C64159B009A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AthleticClubManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>AthleticClubManagementSystem</RootNamespace>
+    <AssemblyName>AthleticClubManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AthleticClubManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AthleticClubManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Athlete.vb" />
+    <Compile Include="AthletesDB.vb" />
+    <Compile Include="AthleticClubDB.vb" />
+    <Compile Include="AthleticEvent.vb" />
+    <Compile Include="BaseEvent.vb" />
+    <Compile Include="EventsDB.vb" />
+    <Compile Include="FRMAddEvent.Designer.vb">
+      <DependentUpon>FRMAddEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAddEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDeleteAthlete.Designer.vb">
+      <DependentUpon>FRMDeleteAthlete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDeleteAthlete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDeleteEvent.Designer.vb">
+      <DependentUpon>FRMDeleteEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDeleteEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHome.Designer.vb">
+      <DependentUpon>FRMHome.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAddAthlete.Designer.vb">
+      <DependentUpon>FRMAddAthlete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAddAthlete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAthletes.Designer.vb">
+      <DependentUpon>FRMAthletes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAthletes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMEvents.Designer.vb">
+      <DependentUpon>FRMEvents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMEvents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModifyAthlete.Designer.vb">
+      <DependentUpon>FRMModifyAthlete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModifyAthlete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModifyEvent.Designer.vb">
+      <DependentUpon>FRMModifyEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModifyEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRaceResults.Designer.vb">
+      <DependentUpon>FRMRaceResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRaceResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Person.vb" />
+    <Compile Include="Race.vb" />
+    <Compile Include="RaceEvent.vb" />
+    <Compile Include="RaceTime.vb" />
+    <Compile Include="ResultsDB.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validator.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FRMAddEvent.resx">
+      <DependentUpon>FRMAddEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDeleteAthlete.resx">
+      <DependentUpon>FRMDeleteAthlete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDeleteEvent.resx">
+      <DependentUpon>FRMDeleteEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMHome.resx">
+      <DependentUpon>FRMHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAddAthlete.resx">
+      <DependentUpon>FRMAddAthlete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAthletes.resx">
+      <DependentUpon>FRMAthletes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMEvents.resx">
+      <DependentUpon>FRMEvents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModifyAthlete.resx">
+      <DependentUpon>FRMModifyAthlete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModifyEvent.resx">
+      <DependentUpon>FRMModifyEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRaceResults.resx">
+      <DependentUpon>FRMRaceResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
